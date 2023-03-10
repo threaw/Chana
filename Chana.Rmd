@@ -1,0 +1,87 @@
+---
+title: "Chana"
+author: "Andrea del Río"
+date: "2023-03-09"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: "journal"
+    highlight: tango
+    code_folding: hide
+    
+
+---
+# ¡Me he encontrado una perra!
+Hace dos meses me encontré una perra. Se llama Chana, porque me la encontré allí. Tenía seis meses (se le calleron los colmillos al poco de encontrarla), no tenía chip y no estaba en las mejores condiciones. Lo de siempre, frio, miedo, cansancio, alguna herida... 
+Es una podenca, varias personas me han dicho ya que seguramente una mezcla de portuguesa y andaluza por su pequeño tamaño y las características físicas y comportamentales. 
+!(Users\andre\Documents\MASTERUGR\ecoinformatica\Antonio\ecoinf_drei\IMG_20230302_173442-_1_.png)
+
+![Chana mirando por la venta de mi habitación](imagenes/chana.png)
+
+## Algunas observaciones
+
+> ### Rasgos físicos
+>
+> - Orejas y hocico grandes y afilados
+> - Patas y cola largas
+> - Configuración corporal dinámica 
+> - Cuerpo elástico
+> - Veloz y ágil
+
+> ### Rasgos comportamentales
+>
+> - Curiosa
+> - Nerviosa
+> - Cariñosa
+> - Asustadiza
+> - Juguetona 
+> - Activa 
+> - Rastreadora 
+
+> ### Demandas principales 
+>
+> - Atención
+> - Actividad 
+
+
+## ¿Por que me la encontré?
+
+Es una situación de sobra conocida el **abandono** y **maltrato** sufrido por los perros de cazadores en España.
+[El infierno de los perros de caza](https://www.publico.es/sociedad/maltrato-animal-40-perros-sufren-maltrato-abandono-robo-son-perros-caza.html)
+y el [desamparo que sufren en la nueva ley de bienestar animal por considerarseles *perros de trabajo* ](https://www.lasprovincias.es/sociedad/mascotas/perros-caza-ley-bienestar-animal-20230209105209-nt.html)
+
+***URGE*** **exigir protección para estas razas y tomar medidas reales y efectivas que detengan las prácticas que atentan contra el bienestar de cualquier animal.**
+
+
+Algunos datos
+
+1. Según un informe de la Fundación Affinity, en 2020 se registraron 16.219 casos de abandono de perros en España, muchos de los cuales eran perros de caza.
+
+1. Según un estudio realizado por la Fundación para el Asesoramiento y Acción en Defensa de los Animales (FAADA), alrededor del 70% de los perros de caza en España son maltratados de alguna manera. Esto incluye el abuso físico y emocional, la falta de atención médica y la falta de higiene adecuada.
+
+1. En 2020, la Asociación Nacional para la Protección y el Bienestar de los Animales (ANPBA) presentó una denuncia ante la Fiscalía General del Estado español por el maltrato de perros de caza en varias comunidades autónomas. La denuncia incluía casos de perros mantenidos en jaulas pequeñas, perros que habían sufrido lesiones durante las cacerías y perros que habían sido abandonados o sacrificados después de haber sido utilizados para la caza
+
+
+Hay clases de perros como hay clases de personas; los perros pobres están condenados. ***URGEN*** **Ayudas económicas para las necesidades básicas de los perros, primordialmente en los casos de adopción (que deberían ser los únicos)** 
+
+## ¿Cuanto me esta costando tener una perra?
+
+
+
+```{r}
+gastos <- data.frame(comida = c(40, 45, 40), vet = c(150, 13, 60), cosas = c(37, 18, 9), viajes = c(0, 10, 20))
+knitr::kable(gastos[1:4, ])
+
+gastos_enero <- rowSums(gastos[1, ])
+gastos_enero 
+gastos_marzo <- rowSums(gastos[3, ])
+gastos_marzo
+
+knitr::kable(gastos[1:4, ])
+
+```
+
+
+
+
