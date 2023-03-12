@@ -75,10 +75,15 @@ knitr::kable(gastos[1:4, ])
 
 gastos_enero <- rowSums(gastos[1, ])
 gastos_enero 
+gastos_febrero <- rowSums(gastos[2, ])
+gastos_febrero
 gastos_marzo <- rowSums(gastos[3, ])
 gastos_marzo
 
 knitr::kable(gastos[1:4, ])
+datos <- c(129, 86, 129)
+colores <- c("grey", "pink", "orange")
+barplot(datos, col=colores, names.arg = c("enero", "febrero", "marzo"), xlab="Mes", ylab="Gasto", main= "Gastos de Chana")
 
 ```
 
